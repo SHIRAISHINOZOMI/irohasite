@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name = "viewport" content="width=device-width, user-scalable=yes,initial-scale=1.0">
+ <title>いろは(Iroha)</title>
+　<link rel="shortcut icon" href="assets/img/common/iroha.ico">
+　<link rel="apple-touch-icon" href="assets/img/common/apple-iroha-icon.png">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/irohacommon.css">
+  <link rel="stylesheet" href="assets/css/irohatop.css">
+  <link href='./assets/css/core/main.css' rel='stylesheet' />
+<link href='./assets/css/daygrid/main.css' rel='stylesheet' />
+<link href='./assets/css/timegrid/main.css' rel='stylesheet' />
+<link href='./assets/css/list/main.css' rel='stylesheet' />
+<script src='./assets/js/core/main.js'></script>
+<script src='./assets/js/interaction/main.js'></script>
+<script src='./assets/js/daygrid/main.js'></script>
+<script src='./assets/js/timegrid/main.js'></script>
+<script src='./assets/js/list/main.js'></script>
+</head>
+<body>
+ <header class="header">
+     <h1 class="logo"><img src="assets/img/common/iroha.svg" alt="ロゴ"></h1>
+　    <div class="catch-copy"><span><font face="HG行書体">ようこそいろはへ</font><br>
+         <font face="@Arial Unicode MS">WELECOME TO IROHA</font></span></div>
+</header>
+<nav class="globalnav">
+ <ul class="globalnav-list">
+     <li><a href="iroha.html">TOP</a></li> 
+     <li><a href="irohamenu/iroha.html">OUR ACTIVITIES</a></li>
+     <li><a href="irohaaccess/iroha.html">ACCESS</a></li>
+     <li><a href="irohacontact/iroha.html">CONTACT US</a></li>
+ </ul>
+</nav>
+<main class="main">
+     <div class="alert">
+           ※コロナウイルスの影響でしばらく活動は休止です(ALL acttivities are suspended due to the COVID-19)
+       </div>
+ <div class="wrapper">
+    <div class="lead">
+        いろはは日本語を用いた留学生と日本人のための国際交流の場です。留学生と日本人の交流のを提供いたします. (We aim to be a platform for language and intercultural communication between international students and Japanese students of Hiroshima university)
+        
+    </div>
+<div class="img-link-wrap">
+ <section class="img-link">
+    <a href="irohamenu/iroha.html">
+     <img src="assets/img/menu/irohaactive.jpg" alt="">
+        <h2 class="heading02"><span>活動内容(OUR ACTIVITIES)</span></h2>
+    </a>
+</section>
+<section class="img-link">
+    <a href="irohaaccess/iroha.html">
+     <img src="assets/img/access/irohaaccess.jpg" alt="" class="img-size">
+        <h2 class="heading02"><span>ACCESS</span></h2>
+   </a>
+</section>
+</div>
+<!--<section>
+<section>
+    <a href="irohamenu/iroha.html">
+    <h3>活動内容(OUR ACYIVITY)</h3>
+    </a>
+</section>
+     <a href="irohaaccess/iroha.html">
+         <h3>ACCEESS</h3>
+    </a>
+</section><-->
+     <br>
+   <section>
+       <div class="alert">
+           ※コロナウイルスの影響でしばらく活動は休止です(ALL acttivities are suspended due to the COVIS-19 virus)
+       </div>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+      
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+            header: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+            },
+            defaultDate: '2020-04-04',
+            navLinks: true, // can click day/week names to navigate views
+            businessHours: true, // display business hours
+            editable: true,
+            events: [
+             /* {
+                title: 'Business Lunch',
+                start: '2019-08-03T13:00:00',
+                constraint: 'businessHours'
+              },
+              {
+                title: 'Meeting',
+                start: '2019-08-13T11:00:00',
+                constraint: 'availableForMeeting', // defined below
+                color: '#257e4a'
+              },*/
+              /*{
+                title: 'Iroha HANAMI',
+                start: '2020-04-05T11:00:00',
+                end: '2020-04-05T13:00:00'
+              },*/
+      
+              /*{
+                title: 'Iroha meeting',
+                start: '2020-04-16T18:30:00',
+                end: '2020-04-16T20:30:00'
+              },
+      
+              {
+                title: 'Iroha meeting',
+                start: '2020-04-23T18:30:00',
+                end: '2020-04-23T20:30:00'
+              },
+              {
+                title: 'Iroha meeting',
+                start: '2020-04-30T18:30:00',
+                end: '2020-04-30T20:30:00'
+              },
+              {
+                title: 'Iroha meeting',
+                start: '2020-05-07T18:30:00',
+                end: '2020-05-07T20:30:00'
+              },
+              {
+                title: 'Iroha meeting',
+                start: '2020-05-14T18:30:00',
+                end: '2020-05-14T20:30:00'
+              },
+              {
+                title: 'Iroha meeting',
+                start: '2020-05-21T18:30:00',
+                end: '2020-05-21T20:30:00'
+              },
+              {
+                title: 'Iroha meeting',
+                start: '2020-05-28T18:30:00',
+                end: '2020-05-28T20:30:00'
+              }, */
+              /*{
+                title: 'Party',
+                start: '2019-08-29T20:00:00'
+              },*/
+      
+              // areas where "Meeting" must be dropped
+            /*  {
+                groupId: 'availableForMeeting',
+                start: '2019-08-11T10:00:00',
+                end: '2019-08-11T16:00:00',
+                rendering: 'background'
+              },
+              {
+                groupId: 'availableForMeeting',
+                start: '2019-08-13T10:00:00',
+                end: '2019-08-13T16:00:00',
+                rendering: 'background'
+              },*/
+      
+              // red areas where no events can be dropped
+              {
+                start: '2020-02-07',
+                end: '2020-04-07',
+                overlap: false,
+                rendering: 'background',
+                color: '#ff9f89'
+              },
+      
+              {
+                start: '2020-05-02',
+                end: '2020-05-06',
+                overlap: false,
+                rendering: 'background',
+                color: '#ff9f89'
+              },
+              /*{
+                start: '2019-08-06',
+                end: '2019-08-08',
+                overlap: false,
+                rendering: 'background',
+                color: '#ff9f89'
+              }*/
+            ]
+          });
+      
+          calendar.render();
+        });
+      
+      </script>
+      <style>
+      
+        body {
+          margin: 40px 10px;
+          padding: 0;
+          font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      
+        #calendar {
+          max-width: 900px;
+          margin: 0 auto;
+        }
+      
+      </style>
+       
+
+     <div id='calendar'></div>  
+
+
+   </section>
+     
+    <section>
+      <div class="photwrap">
+     <a href="phot/irohaphot.html"> 
+         <h2 class="heading02 heading02-phot"><p>PHOTO GALLERY<br>フォトギャラリー</p></h2>
+        </a>
+      </div>
+     </section>
+　　<section>
+    <a href="irohacontact/iroha.html">
+    <h2 class="heading02 heading02"><span>CONTACT US</span></h2>
+    </a>
+    <a href="irohacontact/iroha.html" class="btn"><p>お問い合わせはこちら</p></a> 
+　　</section>
+</div> <!--wrapper-->
+    <div class= eemail><a href="irohahirodai@gmail.com">irohahirodai@gmail.com</a></div>
+</main>
+<footer class="footer">
+    <p class="copy"><small>&copy;広島大学いろは</small><p>
+</footer>
+</body>
+</html>

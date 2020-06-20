@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+<!--<meta charset="utf-8">-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!--これが（上）ネットから持ってきたやつ-->
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--あえて消してみる-->-->
+<meta name = "viewport" content="width=device-width, user-scalable=yes,initial-scale=1.0">
+ <title>お問い合わせ(コンタクト) | いろは(Iroha)</title>
+　<link rel="shortcut icon" href="../assets/img/common/iroha.ico">
+　<link rel="apple-touch-icon" href="../assets/img/common/apple-iroha-icon.png">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/irohacommon.css">
+  <link rel="stylesheet" href="../assets/css/irohacontact.css">
+<script type="text/javascript" src="contact.js"></script>
+</head>
+<body>
+ <header class="header header-contact">
+     <h1 class="logo"><img src="../assets/img/common/iroha.svg" alt="ロゴ"></h1>
+     <div class="catch-copy catch-copy-contact"><span><font face="HG行書体">お問い合わせ<br>CONTACT</font></span></div>
+</header>
+<nav class="globalnav">
+ <ul class="globalnav-list">
+     <li><a href="../iroha.html">TOP</a></li> 
+     <li><a href="../irohamenu/iroha.html">OUR ACTIVITY</a></li>
+     <li><a href="../irohaaccess/iroha.html">ACCESS</a></li>
+     <li><a href="./iroha.html">CONTACT</a></li>
+ </ul>
+</nav>
+<main class="main">
+ <div class="wrapper">
+  <section class="section-contact">
+      <h2 class="heading02"><span>お問い合わせ CONTACT</span></h2>
+      <div class="lead">
+          質問等ございましたら、以下のフォームから送信をお願いいたします.<br>
+          If you have any questions, please fill in the blanks and send message.
+      </div>
+      <form action="irohaconfirm2.php" class="form" method="POST" name="form" onsubmit="return validate()">
+          <fieldset class="form-block">
+              <legend class="form-title">1.お問い合わせ人<span class="must">*必須(must)</span></legend>
+              <div class="form-input">
+                <div class="selectbox-wrap">
+                  <select class="select" name="nation">
+                      <option value="日本人(Japanese)">日本人 JAPANESE</option>
+                      <option value="留学生(International student)">留学生 International Student</option>
+                  </select>
+                </div>
+              </div>
+          </fieldset>
+          
+          <fieldset class="form-block">
+              <legend class="form-title">2.いろはに参加したことはありますか？(Have you ever joined?)<span class="must">*必須(must)</span></legend>
+              <div class="form-input">
+                <input type="radio" name="YESNO" id="radio1" value="1" >
+                  <label for="radio1">はい(YES)</label>
+                <input type="radio" name="YESNO" id="radio2" value="2" >   
+                    <label for="radio2">いいえ(NO)</label>
+              </div>
+          </fieldset>
+          
+            <fieldset class="form-block">
+              <legend class="form-title">3.何回くらい参加しましたか？(Have many times did you join?)<span class="must">*2ではいと答えた方のみ</span></legend>
+              <div class="form-input">
+                <input type="radio" name="times" id="radio1" value="1" >
+                  <label for="radio1">1回(Once)</label>
+                <input type="radio" name="times" id="radio2" value="2" >   
+                    <label for="radio2">2回(Twice)</label>
+                <input type="radio" name="times" id="radio3" value="3" >   
+                    <label for="radio2">3回(Three times)</label>
+                <input type="radio" name="times" id="radio4" value="4">   
+                    <label for="radio2">4回以上(Over four times)</label>
+              </div>
+          </fieldset>
+          
+          <fieldset class="form-block">
+              <legend class="form-title">4.どこでいろはについて知りましたか？(How did you know IROHA)<span class="must">*必須(must)</span></legend>
+              <div class="form-input">
+                <input type="checkbox" name="knows[]" id="checkbox1" value="SNS" >
+                  <label for="checkbox1">SNS(twitter FACEBOOK)</label>
+               <input type="checkbox" name="knows[]" id="checkbox2" value="(by your friends)">
+                    <label for="checkbox2">友達から(by your friends)</label>
+              <input type="checkbox" name="knows[]" id="checkbox3" value="(poster)" >
+                    <label for="checkbox3">ポスター(poster)</label>
+             
+             <input type="checkbox" name="knows[]" id="checkbox3" value="(Others)" >
+                    <label for="checkbox4">その他(Others)</label>
+              </div>
+          </fieldset>
+          
+          <fieldset class="form-block">
+              <legend class="form-title" >5.お名前(What is your name?)<span class="must">*任意(If possible)</span></legend>
+              <div class="form-input">
+                <input type="text" name="name" class="input-text">
+              </div>
+          </fieldset>
+          
+          <fieldset class="form-block">
+              <legend class="form-title">6.ふりがな<span class="must">*Only Japanese</span></legend>
+              <div class="form-input">
+                <input type="text"  name="namefuri" class="input-text">
+              </div>
+          </fieldset>
+          
+          <fieldset class="form-block">
+              <legend class="form-title">7.メールアドレス(E-mail)<span class="must">*必須(must)</span></legend>
+              <div class="form-input">
+                <input type="text" name="mail" class="input-text">
+              </div>
+          </fieldset>
+          
+          <fieldset class="form-block">
+              <legend class="form-title">8.メールアドレス確認用(E-mail　for checking)<span class="must">*必須(must)</span></legend>
+              <div class="form-input">
+                <input type="text" name="mailcheck" class="input-text">
+              </div>
+          </fieldset>
+          
+           <fieldset class="form-block">
+              <legend class="form-title">9.LINE ID<span class="must">*任意(If possible)</span></legend>
+              <div class="form-input">
+                <input type="text" name="lineid" class="input-text">
+              </div>
+          </fieldset>
+          
+           <fieldset class="form-block">
+              <legend class="form-title">10.質問、要望(REQUEST and INQUIRY)<span class="must">*必須(must)</span></legend>
+              <div class="form-input">
+                  <textarea name="inquiry" class="textarea"></textarea>
+              </div>
+          </fieldset>
+          
+          <div class="button">
+              <button type="submit">SEND</button>
+          </div>
+          
+      </form>
+  </section>
+</div> <!--wrapper-->
+</main>
+<footer class="footer">
+    <p class="copy"><small>&copy;広島大学いろは</small><p>
+</footer>
+</body>
+</html>
