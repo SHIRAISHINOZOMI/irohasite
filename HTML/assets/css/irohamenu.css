@@ -1,0 +1,83 @@
+@charset "UTF-8";
+.header.header-menu{
+    background: url(../img/menu/irohamenu.jpg) no-repeat center center/cover;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.catch-copy.catch-copy-menu{
+    color: aqua
+}
+
+.lead-title{
+    font-size:25px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ⅯＳ　Ｐ明朝", "ⅯＳ　 明朝", serif;
+}
+
+.heading02.heading02{
+    margin-top: 50px;
+}
+
+.heading02.heading02--menu span{
+      border-bottom: 2px solid #000;
+    padding-bottom: 1px
+        
+}
+
+.menu{
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    list-style: none;
+}
+
+.menu-last{
+    padding: 15px 0;
+    border-bottom: 10px solid #000;
+    list-style: none;
+}
+.menu-img{
+    width:500px;
+    height:400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top:13px;
+}
+
+
+
+
+
+.title{
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.explain{
+    font-size:14px;
+    margin-left: 50px;
+    margin-right: 0px;
+    margin-bottom: 12px;
+}
+
+.menu-category1{
+    margin-bottom:60px;
+}
+
+.explain2{
+    margin-top: 15px;
+    text-align: right;
+    font-size:14px;
+}
+
+/*写真の調整のプログラム*/
+
